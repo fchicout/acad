@@ -3,7 +3,17 @@
 
 Um projeto para exercitar conceitos de arquitetura de software, em uma aula de construção de artefatos.
 
+Resources serve pra armazenar conteúdo não código fonte de apoio à aplicação;
 
+Presentation pode usar classes que vem de:
+ - Business;
+ - Utils;
+
+Business pode usar as classes que vem de:
+ - Persistence;
+ - Utils;
+
+Persistence só lida com as questões de BD;
 
 
 ## Conteúdos de Apoio Relacionados
