@@ -7,19 +7,19 @@ public class Student {
     private int matricula;
     private String nomeCompleto;
     private String nomeSocial;
-    private Date date;
+    private String dataNascimento;
     private String nomeMae;
     private String status;
 
     public Student() {
     }
 
-    public Student(int id, int matricula, String nomeCompleto, String nomeSocial, Date date, String nomeMae, String status) {
+    public Student(int id, int matricula, String nomeCompleto, String nomeSocial, String dataNascimento, String nomeMae, String status) {
         this.id = id;
         this.matricula = matricula;
         this.nomeCompleto = nomeCompleto;
         this.nomeSocial = nomeSocial;
-        this.date = date;
+        this.dataNascimento = dataNascimento;
         this.nomeMae = nomeMae;
         this.status = status;
     }
@@ -29,7 +29,11 @@ public class Student {
     }
 
     public void setId(int id) {
-        this.id = id;
+        if(id > 0){
+            this.id = id;
+        }else{
+            System.out.println("Aluno não cadastrado");
+        }
     }
 
     public int getMatricula() {
@@ -37,7 +41,11 @@ public class Student {
     }
 
     public void setMatricula(int matricula) {
-        this.matricula = matricula;
+        if(matricula > 0){
+            this.matricula = matricula;
+        }else{
+            System.out.println("Matricula não pode ser menor do que 0!");
+        }
     }
 
     public String getNomeCompleto() {
@@ -45,7 +53,11 @@ public class Student {
     }
 
     public void setNomeCompleto(String nomeCompleto) {
-        this.nomeCompleto = nomeCompleto;
+        if(nomeCompleto != null){
+            this.nomeCompleto = nomeCompleto;
+        }else{
+            System.out.println("Nome não pode ser vázio6");
+        }
     }
 
     public String getNomeSocial() {
@@ -53,15 +65,23 @@ public class Student {
     }
 
     public void setNomeSocial(String nomeSocial) {
-        this.nomeSocial = nomeSocial;
+        if (nomeSocial != null) {
+            this.nomeSocial = nomeSocial;
+        }else{
+            this.nomeSocial = nomeCompleto;
+        }
     }
 
-    public Date getDate() {
-        return date;
+    public String getDataNascimento() {
+        return dataNascimento;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setDataNascimento(String dataNascimento) {
+        if(dataNascimento != null){
+            this.dataNascimento = dataNascimento;
+        }else{
+            System.out.println("Por favor, inserir data de nascimento.");
+        }
     }
 
     public String getNomeMae() {
@@ -69,7 +89,11 @@ public class Student {
     }
 
     public void setNomeMae(String nomeMae) {
-        this.nomeMae = nomeMae;
+        if(nomeMae != null){
+            this.nomeMae = nomeMae;
+        }else{
+            System.out.println("Nome da mãe não pode ficar vázio");
+        }
     }
 
     public String getStatus() {
