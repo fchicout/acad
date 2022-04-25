@@ -7,14 +7,14 @@ public class Student {
     private int matricula;
     private String nomeCompleto;
     private String nomeSocial;
-    private String dataNascimento;
+    private Date dataNascimento;
     private String nomeMae;
     private String status;
 
     public Student() {
     }
 
-    public Student(int id, int matricula, String nomeCompleto, String nomeSocial, String dataNascimento, String nomeMae, String status) {
+    public Student(int id, int matricula, String nomeCompleto, String nomeSocial, Date dataNascimento, String nomeMae, String status) {
         this.id = id;
         this.matricula = matricula;
         this.nomeCompleto = nomeCompleto;
@@ -72,15 +72,15 @@ public class Student {
         }
     }
 
-    public String getDataNascimento() {
+    public Date getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(String dataNascimento) {
+    public void setDataNascimento(Date dataNascimento) {
         if(dataNascimento != null){
             this.dataNascimento = dataNascimento;
         }else{
-            System.out.println("Por favor, inserir data de nascimento.");
+            System.out.println("Por favor, inserir data de nascimento!");
         }
     }
 
