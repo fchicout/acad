@@ -10,7 +10,7 @@ Um projeto para exercitar conceitos de arquitetura de software, em uma aula de c
 
 Alguns conteúdos de auxílio:
 
-[Code Review e Pull Requests no Github](https://www.youtube.com/watch?v=MpsNF-EyytQ) <-- use isso pra submeter suas modificações
+[Como criar um Pull Request (PR) no GitHub](https://www.youtube.com/watch?v=U-Y_Mtdyo74) <-- use isso pra submeter suas modificações
 
 [Git e Github para Iniciantes](https://youtube.com/playlist?list=PLlAbYrWSYTiPA2iEiQ2PF_A9j__C4hi0A) <-- atividades básicas com git
 
