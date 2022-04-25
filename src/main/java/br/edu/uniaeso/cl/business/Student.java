@@ -80,7 +80,7 @@ public class Student {
         if(dataNascimento != null){
             this.dataNascimento = dataNascimento;
         }else{
-            System.out.println("Por favor, inserir data de nascimento.");
+            System.out.println("Por favor, inserir data de nascimento!");
         }
     }
 
