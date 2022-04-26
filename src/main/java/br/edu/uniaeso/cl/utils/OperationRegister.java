@@ -24,7 +24,7 @@ public class OperationRegister {
     public void operationLog() throws IOException {
         FileInputStream fis = null;
         try {
-            fis = new FileInputStream(RegistroAlunos);
+            fis = new FileInputStream("registroAlunos.txt");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } finally {
