@@ -1,6 +1,9 @@
 package br.edu.uniaeso.cl.utils;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class OperationRegister {
     private OperationRegister instance;
