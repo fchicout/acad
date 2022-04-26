@@ -6,25 +6,25 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class OperationRegister {
-    private OperationRegister instance;
-    File RegistroAlunos;
+    private static OperationRegister instance;
+    private File RegistroAlunos;
 
     private OperationRegister() {
     }
 
-    public OperationRegister getInstance() {
-        if (this.instance == null) {
-            this.instance = new OperationRegister();
+    public static OperationRegister getInstance() {
+        if (instance == null) {
+            instance = new OperationRegister();
         } else {
-            return this.instance;
+            return instance;
         }
-        return this.instance;
+        return instance;
     }
 
     public void operationLog() throws IOException {
         FileInputStream fis = null;
         try {
-            fis = new FileInputStream(RegistroAlunos);
+            fis = new FileInputStream("registroAlunos.txt");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } finally {
